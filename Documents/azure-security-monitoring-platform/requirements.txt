@@ -1,0 +1,9 @@
+azure-identity
+azure-monitor-query
+azure-mgmt-security
+flask
+pandas
+python-dotenv
+pytest
+bandit
+pip-audit
