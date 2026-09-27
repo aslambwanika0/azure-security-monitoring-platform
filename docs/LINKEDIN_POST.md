@@ -15,3 +15,19 @@ A key lesson from this build has been separating a working prototype from a full
 Project and progress: https://github.com/aslambwanika0/azure-security-monitoring-platform/pull/1
 
 #Cybersecurity #CloudSecurity #MicrosoftAzure #MicrosoftSentinel #Python #KQL #DetectionEngineering #DevSecOps
+
+## Suggested LinkedIn image carousel
+
+Use the following **real existing screenshots**, in this order. Open each link, review and redact account/tenant/subscription/personal information, save the image, then upload it as an image attachment to LinkedIn. GitHub images embedded in a Markdown document do **not** automatically attach to a LinkedIn post.
+
+1. [Microsoft Sentinel enabled](screenshots/sentinel-enabled.png)
+2. [Azure Activity Logs ingestion](screenshots/azure-activity-logs.png)
+3. [First AzureActivity KQL investigation](screenshots/first-kql-query.png)
+4. [Log Analytics workspace](screenshots/log-analytics-workspace.png)
+5. [Original Flask backend screenshot](screenshots/flask-running.png)
+
+Optional: [Successful automated test/security workflow](https://github.com/aslambwanika0/azure-security-monitoring-platform/actions/runs/36345414327). Capture this directly from GitHub after verifying the display.
+
+Caption idea for first image: **Azure Cloud Security Monitoring & Detection Platform | Portfolio Project**
+
+These original screenshots show Phase 1–3 evidence. Do not represent them as screenshots of the newer live dashboard or deployed analytics rules.
