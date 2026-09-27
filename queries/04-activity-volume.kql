@@ -1,0 +1,4 @@
+AzureActivity
+| where TimeGenerated > ago(7d)
+| summarize Operations=count(), Failures=countif(ActivityStatusValue =~ "Failure" or ActivityStatusValue =~ "Failed") by bin(TimeGenerated, 1d)
+| sort by TimeGenerated asc

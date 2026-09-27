@@ -1,0 +1,7 @@
+// Investigative query for potentially security-relevant configuration writes.
+AzureActivity
+| where TimeGenerated > ago(7d)
+| where OperationNameValue has "Microsoft.Storage/storageAccounts/write"
+    or OperationNameValue has "Microsoft.Network/networkSecurityGroups/securityRules/write"
+| project TimeGenerated, Caller, OperationNameValue, ActivityStatusValue, ResourceGroup, ResourceId, CorrelationId
+| sort by TimeGenerated desc
