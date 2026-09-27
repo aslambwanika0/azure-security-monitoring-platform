@@ -1,0 +1,6 @@
+// AzureActivity ingestion required. Tune frequency/threshold to your environment.
+AzureActivity
+| where TimeGenerated > ago(1d)
+| where ActivityStatusValue =~ "Failure" or ActivityStatusValue =~ "Failed"
+| project TimeGenerated, Caller, OperationNameValue, ActivityStatusValue, ResourceGroup, ResourceId, CorrelationId
+| sort by TimeGenerated desc

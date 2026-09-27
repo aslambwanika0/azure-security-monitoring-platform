@@ -1,0 +1,5 @@
+[
+  {"TimeGenerated":"2026-08-12T17:00:00Z","Caller":"analyst@example.invalid","OperationNameValue":"Microsoft.Resources/subscriptions/resourceGroups/write","ActivityStatusValue":"Success","ResourceGroup":"security-monitoring-lab","ResourceId":"/subscriptions/example/resourceGroups/security-monitoring-lab"},
+  {"TimeGenerated":"2026-08-12T17:02:00Z","Caller":"test@example.invalid","OperationNameValue":"Microsoft.Compute/virtualMachines/write","ActivityStatusValue":"Failure","ResourceGroup":"security-monitoring-lab","ResourceId":"/subscriptions/example/resourceGroups/security-monitoring-lab/providers/Microsoft.Compute/virtualMachines/example"},
+  {"TimeGenerated":"2026-08-12T17:04:00Z","Caller":"admin@example.invalid","OperationNameValue":"Microsoft.Authorization/roleAssignments/write","ActivityStatusValue":"Success","ResourceGroup":"security-monitoring-lab","ResourceId":"/subscriptions/example/resourceGroups/security-monitoring-lab/providers/Microsoft.Authorization/roleAssignments/example"}
+]

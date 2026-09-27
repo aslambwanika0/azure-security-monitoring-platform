@@ -1,0 +1,7 @@
+// Review role assignment changes; a change does not itself prove malicious activity.
+AzureActivity
+| where TimeGenerated > ago(7d)
+| where OperationNameValue has "Microsoft.Authorization/roleAssignments/write"
+    or OperationNameValue has "Microsoft.Authorization/roleAssignments/delete"
+| project TimeGenerated, Caller, OperationNameValue, ActivityStatusValue, ResourceGroup, ResourceId, CorrelationId
+| sort by TimeGenerated desc
