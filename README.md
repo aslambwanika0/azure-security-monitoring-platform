@@ -5,6 +5,27 @@ A read-only cybersecurity portfolio project that combines Azure Activity monitor
 ## Verified Azure foundation (Phase 1–3)
 The project previously configured a Log Analytics workspace in Central US, enabled Microsoft Sentinel, routed Azure Activity Logs to the workspace, and observed results from an `AzureActivity` KQL query with a seven-day time range. Screenshots are retained in [docs/screenshots](docs/screenshots/). Screenshots document those historical milestones, not proof that every proposed rule is deployed.
 
+## Project screenshots (existing Phase 1–3 evidence)
+
+The images below come from the original GitHub commit and show the earlier Azure configuration, log ingestion, KQL investigation, and local Flask proof of concept. They are historical evidence, **not** proof of live deployment of the new dashboard or scheduled Sentinel detection rules. Review and redact any sensitive account or resource details before reusing them in public social posts.
+
+### Microsoft Sentinel enabled
+![Microsoft Sentinel workspace setup](docs/screenshots/sentinel-enabled.png)
+
+### Azure Activity Logs flowing to Log Analytics
+![Azure Activity Logs diagnostic setup](docs/screenshots/azure-activity-logs.png)
+
+### First successful KQL investigation
+![AzureActivity KQL query results](docs/screenshots/first-kql-query.png)
+
+### Log Analytics workspace
+![Log Analytics workspace](docs/screenshots/log-analytics-workspace.png)
+
+### Flask backend prototype
+![Flask backend running](docs/screenshots/flask-running.png)
+
+[All nine original project screenshots](docs/screenshots/) · [Remaining live-evidence checklist](docs/SCREENSHOT_CHECKLIST.md)
+
 ## New code on this branch (Phase 4 onward)
 - Four documented, inspectable `AzureActivity` KQL queries, including failed operations and RBAC changes.
 - Read-only Python event collector using `DefaultAzureCredential` and Log Analytics query API.
